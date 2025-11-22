@@ -1,9 +1,10 @@
 const CACHE_NAME = 'ragaflow-v1';
+const BASE_PATH = '/RagaFlow';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/manifest.json',
-    '/assets/icons/favicon.svg'
+    BASE_PATH + '/',
+    BASE_PATH + '/index.html',
+    BASE_PATH + '/manifest.json',
+    BASE_PATH + '/assets/icons/favicon.svg'
 ];
 
 self.addEventListener('install', event => {
