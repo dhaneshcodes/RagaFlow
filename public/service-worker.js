@@ -18,13 +18,22 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) {
-                    return response;
-                }
-                return fetch(event.request);
-            })
-    );
+    const url = new URL(event.request.url);
+    const path = url.pathname;
+    
+    // If request is for base path, serve from cache
+    if (path.startsWith(BASE_PATH) || path === '/' || path === '/index.html') {
+        event.respondWith(
+            caches.match(event.request)
+                .then(response => {
+                    if (response) {
+                        return response;
+                    }
+                    return fetch(event.request);
+                })
+        );
+    } else {
+        // For other requests, just fetch normally
+        event.respondWith(fetch(event.request));
+    }
 });
