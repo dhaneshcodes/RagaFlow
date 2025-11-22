@@ -1,0 +1,58 @@
+[
+    {
+        "id": "yaman",
+        "name": "Raga Yaman",
+        "mood": "calm",
+        "rasa": "Shanta",
+        "timeOfDay": "evening",
+        "description": "A serene evening raga that evokes peace and tranquility.",
+        "audioPath": "/assets/audio/ragas/yaman_loop.mp3",
+        "droneNote": "E3",
+        "color": "#FF9933",
+        "arohana": "N R G M D N S",
+        "avarohana": "S N D P M G R S",
+        "unlockLevel": 1
+    },
+    {
+        "id": "bhairavi",
+        "name": "Raga Bhairavi",
+        "mood": "sad",
+        "rasa": "Karuna",
+        "timeOfDay": "morning",
+        "description": "A morning raga often associated with devotion and longing.",
+        "audioPath": "/assets/audio/ragas/bhairavi_loop.mp3",
+        "droneNote": "C#3",
+        "color": "#374785",
+        "arohana": "S r g m P d n S",
+        "avarohana": "S n d P m g r S",
+        "unlockLevel": 1
+    },
+    {
+        "id": "bhupali",
+        "name": "Raga Bhupali",
+        "mood": "joy",
+        "rasa": "Shringara",
+        "timeOfDay": "night",
+        "description": "A pentatonic raga that brings a sense of stability and joy.",
+        "audioPath": "/assets/audio/ragas/bhupali_loop.mp3",
+        "droneNote": "D3",
+        "color": "#F8E9A1",
+        "arohana": "S R G P D S",
+        "avarohana": "S D P G R S",
+        "unlockLevel": 2
+    },
+    {
+        "id": "darbari",
+        "name": "Raga Darbari",
+        "mood": "stress",
+        "rasa": "Vira",
+        "timeOfDay": "midnight",
+        "description": "A grave and majestic raga that helps settle the mind.",
+        "audioPath": "/assets/audio/ragas/darbari_loop.mp3",
+        "droneNote": "D3",
+        "color": "#F76C6C",
+        "arohana": "S R g m P d n S",
+        "avarohana": "S n d P m g R S",
+        "unlockLevel": 3
+    }
+]
